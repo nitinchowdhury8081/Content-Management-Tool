@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <nav class="navbar-hd d-flex justify-content-around align-items-center">
+        <h5 class="pt-1">Personal Blogging Website</h5>
+        <div class="d-flex navbarsecond align-items-center">
+            <button class="loginbtnrouter checkifcurrentisloggedinornot fs-5">Log out</button>
+        </div>
+    </nav>
+    <div class="headingofnav fs-1 fw-bold ps-5">
+        <a href="../Index.html">Dashbord</a>
+    </div>
+    <div class="dashbordotherbody mt-5 ms-5">
+
+        <div class="dashborddopostdiv shadow p-5 d-flex flex-column">
+            <input type="text" class="rounded border m-1 py-2 px-3" placeholder="Placeholder" name="" id="textheading">
+            <textarea id="textdata" class="border rounded m-1 py-2 px-3" placeholder="Whats in your Mind" cols="30" rows="10"></textarea>
+            <input type="button" value="Publish Blog" class="mt-2 fw-bold rounded py-1 shadow postbtn" id="publishBook">
+        </div>
+        <h3 class="mt-5">My Blogs</h3>
+        <div class="mt-1 postdivhd">
+
+            <div class="postdivdashbord my-3 px-5 pt-5 pb-1  rounded shadow-sm d-flex flex-column">
+                <div class="postpersondiv d-flex">
+                    <img width="100px" height="100px" class="rounded-3 imageofpost me-3" src="https://www.digitalvidya.com/blog/wp-content/uploads/2014/12/incredible-india-1.jpg " alt=" ">
+                    <div>
+                        <h3>Amazing India Tour</h3>
+                        <p>Date - All data</p>
+                    </div>
+                </div>
+                <div class="maincontentofpost ">
+                    India is indeed an incredible country with a rich cultural heritage, diverse landscapes, and a variety of experiences to offer. From the bustling streets of Delhi to the serene backwaters of Kerala, there are countless amazing places to visit and things
+                    to do in India. Here's a suggested itinerary for an amazing tour in India.
+                </div>
+                <div class="editdeletarea d-flex mt-5 ">
+                    <p>Delete</p>
+                    <p onClick="editmodalfoo() " data-bs-toggle="modal " data-bs-target="#staticBackdrop " class="ms-4 ">Edit</p>
+                </div>
+            </div>
+
+            <div class="postdivdashbord my-3 px-5 pt-5 pb-1 rounded shadow-sm d-flex flex-column ">
+                <div class="postpersondiv d-flex ">
+                    <img width="100px " height="100px " class="rounded-3 imageofpost me-3 " src="https://images.pexels.com/photos/1542620/pexels-photo-1542620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img  ">
+                    <div>
+                        <h3>New Delhi</h3>
+                        <p>Start your journey in the capital city, Delhi. Explore historical sites like the Red Fort, Qutub Minar, and Humayun's Tomb. Don't miss the bustling markets of Chandni Chowk and the tranquil Lotus Temple</p>
+                    </div>
+                </div>
+                <div class="editdeletarea d-flex mt-5 ">
+                    <p>Delete</p>
+                    <p onClick="editmodalfoo() " data-bs-toggle="modal " data-bs-target="#staticBackdrop " class="ms-4 ">Edit</p>
+                </div>
+            </div>
+
+            <div class="postdivdashbord my-3 px-5 pt-5 pb-1 rounded shadow-sm d-flex flex-column ">
+                <div class="postpersondiv d-flex ">
+                    <img width="100px " height="100px " class="rounded-3 imageofpost me-3 " src="https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=800" alt=" ">
+                    <div>
+                        <h3>Agra</h3>
+                        <p>Travel to Agra, home to the iconic Taj Mahal, one of the Seven Wonders of the World. Visit the Agra Fort and Fatehpur Sikri, both UNESCO World Heritage Sites.</p>
+                    </div>
+                </div>
+                <div class="editdeletarea d-flex mt-5 ">
+                    <p>Delete</p>
+                    <p onClick="editmodalfoo() " data-bs-toggle="modal " data-bs-target="#staticBackdrop " class="ms-4 ">Edit</p>
+                </div>
+            </div>
+
+            <div class="postdivdashbord my-3 px-5 pt-5 pb-1 rounded shadow-sm d-flex flex-column ">
+                <div class="postpersondiv d-flex ">
+                    <img width="80px " height="100px " class="rounded-3 imageofpost me-3 " src="https://images.pexels.com/photos/7919685/pexels-photo-7919685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=" ">
+                    <div>
+                        <h3>Varansi</h3>
+                        <p>Experience the spiritual side of India in Varanasi, one of the oldest continuously inhabited cities in the world. Witness the mesmerizing Ganga Aarti ceremony on the ghats of the Ganges River and explore the narrow lanes of the
+                            old city.</p>
+                    </div>
+                </div>
+                <div class="editdeletarea d-flex mt-5 ">
+                    <p>Delete</p>
+                    <p class="ms-4 ">Edit</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="postdivdashbord my-3 px-5 pt-5 pb-1 rounded shadow-sm d-flex flex-column ">
+            <div class="postpersondiv d-flex ">
+                <img width="60px " height="100px " class="rounded-3 imageofpost me-3 " src="https://images.pexels.com/photos/3974150/pexels-photo-3974150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=" ">
+                <div>
+                    <h3>Jaipur</h3>
+                    <p>Continue to Jaipur, the Pink City, known for its magnificent forts and palaces. Explore the Amber Fort, City Palace, Jantar Mantar, and Hawa Mahal. Don't forget to indulge in the local cuisine and shop for traditional handicrafts.</p>
+                </div>
+            </div>
+            <div class="editdeletarea d-flex mt-5 ">
+                <p>Delete</p>
+                <p class="ms-4 ">Edit</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="allotheropost py-2 px-4 rounded-5 ">
+        <button type="button " class="btn " data-bs-toggle="modal " data-bs-target="#exampleModal ">
+            Click Me
+          </button>
+    </div>
+
+    <div class="modal fade " id="exampleModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h1 class="modal-title fs-5 " id="exampleModalLabel ">Rounter's Page</h1>
+                    <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                </div>
+                <div class="modal-body d-flex flex-column ">
+                    <a href="/index.html ">Want To go on home Page</a>
+                    <a href="/yourprofile.html ">Want To go on Upload Page</a>
+                    <a href="/editprofile.html ">Want To go on edit Page</a>
+                    <a href="/loginpage.html ">Want To go on login Page</a>
+                    <a href="/SignupPage.html ">Want To go on sign up Page</a>
+                </div>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade " id="staticBackdrop " data-bs-backdrop="static " data-bs-keyboard="false " tabindex="-1 " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <input style="width: 100%; " type="text " class="modal-title fs-5 modalheadingedit " id="staticBackdropLabel ">
+
+                    <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                </div>
+                <div class="modal-body ">
+                    <textarea id=" " style="width: 100%; " class="modalbodyedit "></textarea>
+                </div>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
+                    <button type="button " onClick="editinfirestorefoo() " class="btn btn-primary editbtnuid ">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm " crossorigin="anonymous "></script>
+
+    <script type="module " src="yourprofile.js "></script>
+</body>
+
+</html>
